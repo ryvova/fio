@@ -1,0 +1,6 @@
+{form uploadFilesForm}
+    <div class="mb-3" n:foreach="$form->controls as $name => $field">
+        {label $name /}
+        {input $name}
+    </div>
+{/form}

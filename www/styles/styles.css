@@ -1,0 +1,58 @@
+.wrapper {
+    width: 70em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding: 1em 1em 0 1em
+}
+
+.table1_header {
+    font-weight: bold;
+    display: inline-block;
+    margin: 0;
+    padding: 0 0 0 0
+}
+
+.table2_header {
+    font-weight: bold;
+    display: inline-block;
+    margin: 0;
+    padding: 3em 0 0 0
+}
+
+.table1_body {
+    display: inline-block;
+    margin: 0;
+    padding: 0 0 1em 0;
+    vertical-align: top
+}
+
+.table2_body {
+    display: inline-block;
+    padding: 0
+}
+
+.year {
+    width: 4em;
+}
+
+.movie {
+   width: 31em
+}
+
+.star {
+    width: 16em
+}
+
+body {
+    background-color: lightskyblue;
+}
+
+hr {
+    border: 2px solid black;
+    opacity: 1
+}
+
+#table1_body .year {
+    font-weight: bold
+}

@@ -1,0 +1,22 @@
+<div class="table1_header year">Rok</div>
+<div class="table1_header movie">Ženy</div>
+<div class="table1_header movie">Muži</div>
+
+{var $maleOscars = $oscars->getMaleOscars()}
+{var $femaleOscars = $oscars->getFemaleOscars()}
+
+<div><hr></div>
+
+<div id="table1_body">
+    {foreach $maleOscars as $oscar}
+        <div class="table1_body year">{$oscar->getYear()}</div>
+        <div class="table1_body movie">
+            {$femaleOscars[$iterator->counter - 1]->getStarName()} ({$femaleOscars[$iterator->counter - 1]->getStarAge()})<br>
+            {$femaleOscars[$iterator->counter - 1]->getMovie()}
+        </div>
+        <div class="table1_body movie">
+            {$oscar->getStarName()} ({$oscar->getStarAge()}) <br>
+            {$oscar->getMovie()}
+        </div>
+    {/foreach}
+</div>
